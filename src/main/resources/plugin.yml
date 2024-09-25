@@ -1,0 +1,28 @@
+name: Elysium_Crates
+version: '${project.version}'
+main: dev.huls.elysium_crates.Main
+api-version: '1.20'
+commands:
+  givekey:
+    description: Give keys
+    permission: elysium.keys.give
+    aliases:
+      - givechaves
+      - givechave
+      - givekeys
+  givecrate:
+    description: Give crates
+    permission: elysium.crates.give
+    aliases:
+      - givecrates
+      - givecaixas
+      - givecaixa
+  giveremoveitem:
+    description: Give remove item
+    permission: elysium.removeitem.give
+    aliases:
+      - giveitemremove
+      - crateremove
+      - crateremoveitem
+softdepend:
+  - DecentHolograms
